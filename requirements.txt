@@ -1,0 +1,11 @@
+# Python >= 3.10 (anthropic 1.x)
+anthropic==1.14.0
+fastapi==0.143.1
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+python-multipart==0.0.32
+numpy==2.5.4
+scikit-learn==1.9.1
+# tests
+pytest==9.1.1
+httpx==0.28.1

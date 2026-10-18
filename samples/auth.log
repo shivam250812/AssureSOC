@@ -1,0 +1,81 @@
+Oct 14 06:12:00 web-01 sshd[2000]: Accepted publickey for adm.kavya from 10.0.1.33 port 40000 ssh2: ED25519 SHA256:abc0
+Oct 14 06:28:00 web-01 sshd[2001]: Accepted publickey for adm.kavya from 10.0.1.34 port 40001 ssh2: ED25519 SHA256:abc1
+Oct 14 06:53:00 web-01 sshd[2002]: Accepted publickey for adm.kavya from 10.0.1.33 port 40002 ssh2: ED25519 SHA256:abc2
+Oct 14 07:17:00 web-01 sshd[2003]: Accepted publickey for deploy from 10.0.1.34 port 40003 ssh2: ED25519 SHA256:abc3
+Oct 14 07:30:00 web-01 sshd[2004]: Accepted publickey for adm.kavya from 10.0.1.33 port 40004 ssh2: ED25519 SHA256:abc4
+Oct 14 07:41:00 web-01 sshd[2005]: Accepted publickey for adm.kavya from 10.0.1.34 port 40005 ssh2: ED25519 SHA256:abc5
+Oct 14 08:03:00 web-01 sshd[2006]: Accepted publickey for adm.kavya from 10.0.1.34 port 40006 ssh2: ED25519 SHA256:abc6
+Oct 14 08:20:00 web-01 sshd[2007]: Accepted publickey for adm.kavya from 10.0.1.33 port 40007 ssh2: ED25519 SHA256:abc7
+Oct 14 08:32:00 web-01 sshd[2008]: Accepted publickey for adm.kavya from 10.0.1.33 port 40008 ssh2: ED25519 SHA256:abc8
+Oct 14 08:53:00 web-01 sshd[2009]: Accepted publickey for adm.rahul from 10.0.1.33 port 40009 ssh2: ED25519 SHA256:abc9
+Oct 14 09:00:00 web-01 sshd[2010]: Accepted publickey for deploy from 10.0.1.33 port 40010 ssh2: ED25519 SHA256:abc10
+Oct 14 09:00:00 web-01 sshd[3000]: Failed password for root from 192.0.2.200 port 50000 ssh2
+Oct 14 09:00:07 web-01 sshd[3001]: Failed password for root from 192.0.2.200 port 50001 ssh2
+Oct 14 09:00:14 web-01 sshd[3002]: Failed password for root from 192.0.2.200 port 50002 ssh2
+Oct 14 09:00:21 web-01 sshd[3003]: Failed password for root from 192.0.2.200 port 50003 ssh2
+Oct 14 09:00:28 web-01 sshd[3004]: Failed password for root from 192.0.2.200 port 50004 ssh2
+Oct 14 09:00:35 web-01 sshd[3005]: Failed password for root from 192.0.2.200 port 50005 ssh2
+Oct 14 09:00:42 web-01 sshd[3006]: Failed password for root from 192.0.2.200 port 50006 ssh2
+Oct 14 09:00:49 web-01 sshd[3007]: Failed password for root from 192.0.2.200 port 50007 ssh2
+Oct 14 09:00:56 web-01 sshd[3008]: Failed password for root from 192.0.2.200 port 50008 ssh2
+Oct 14 09:01:03 web-01 sshd[3009]: Failed password for root from 192.0.2.200 port 50009 ssh2
+Oct 14 09:01:10 web-01 sshd[3010]: Failed password for root from 192.0.2.200 port 50010 ssh2
+Oct 14 09:01:17 web-01 sshd[3011]: Failed password for root from 192.0.2.200 port 50011 ssh2
+Oct 14 09:01:24 web-01 sshd[3012]: Failed password for root from 192.0.2.200 port 50012 ssh2
+Oct 14 09:01:31 web-01 sshd[3013]: Failed password for root from 192.0.2.200 port 50013 ssh2
+Oct 14 09:01:38 web-01 sshd[3014]: Failed password for root from 192.0.2.200 port 50014 ssh2
+Oct 14 09:01:45 web-01 sshd[3015]: Failed password for root from 192.0.2.200 port 50015 ssh2
+Oct 14 09:01:52 web-01 sshd[3016]: Failed password for root from 192.0.2.200 port 50016 ssh2
+Oct 14 09:01:59 web-01 sshd[3017]: Failed password for root from 192.0.2.200 port 50017 ssh2
+Oct 14 09:02:06 web-01 sshd[3018]: Failed password for root from 192.0.2.200 port 50018 ssh2
+Oct 14 09:02:13 web-01 sshd[3019]: Failed password for root from 192.0.2.200 port 50019 ssh2
+Oct 14 09:02:20 web-01 sshd[3020]: Failed password for root from 192.0.2.200 port 50020 ssh2
+Oct 14 09:02:27 web-01 sshd[3021]: Failed password for root from 192.0.2.200 port 50021 ssh2
+Oct 14 09:02:34 web-01 sshd[3022]: Failed password for root from 192.0.2.200 port 50022 ssh2
+Oct 14 09:02:41 web-01 sshd[3023]: Failed password for root from 192.0.2.200 port 50023 ssh2
+Oct 14 09:02:48 web-01 sshd[3024]: Failed password for root from 192.0.2.200 port 50024 ssh2
+Oct 14 09:02:55 web-01 sshd[3025]: Failed password for root from 192.0.2.200 port 50025 ssh2
+Oct 14 09:03:02 web-01 sshd[3026]: Failed password for root from 192.0.2.200 port 50026 ssh2
+Oct 14 09:03:09 web-01 sshd[3027]: Failed password for root from 192.0.2.200 port 50027 ssh2
+Oct 14 09:03:16 web-01 sshd[3028]: Failed password for root from 192.0.2.200 port 50028 ssh2
+Oct 14 09:03:23 web-01 sshd[3029]: Failed password for root from 192.0.2.200 port 50029 ssh2
+Oct 14 09:14:00 web-01 sshd[2011]: Accepted publickey for deploy from 10.0.1.34 port 40011 ssh2: ED25519 SHA256:abc11
+Oct 14 09:34:00 web-01 sshd[2012]: Accepted publickey for adm.kavya from 10.0.1.34 port 40012 ssh2: ED25519 SHA256:abc12
+Oct 14 09:52:00 web-01 sshd[2013]: Accepted publickey for adm.rahul from 10.0.1.34 port 40013 ssh2: ED25519 SHA256:abc13
+Oct 14 10:01:00 web-01 sshd[2014]: Accepted publickey for adm.rahul from 10.0.1.33 port 40014 ssh2: ED25519 SHA256:abc14
+Oct 14 10:07:00 web-01 sshd[2015]: Accepted publickey for deploy from 10.0.1.34 port 40015 ssh2: ED25519 SHA256:abc15
+Oct 14 10:18:00 web-01 sshd[2016]: Accepted publickey for adm.rahul from 10.0.1.34 port 40016 ssh2: ED25519 SHA256:abc16
+Oct 14 10:43:00 web-01 sshd[2017]: Accepted publickey for adm.rahul from 10.0.1.34 port 40017 ssh2: ED25519 SHA256:abc17
+Oct 14 11:00:00 web-01 sshd[4000]: Failed password for invalid user admin from 198.51.100.250 port 51000 ssh2
+Oct 14 11:00:20 web-01 sshd[4001]: Failed password for invalid user ubuntu from 198.51.100.250 port 51001 ssh2
+Oct 14 11:00:40 web-01 sshd[4002]: Failed password for invalid user test from 198.51.100.250 port 51002 ssh2
+Oct 14 11:01:00 web-01 sshd[4003]: Failed password for invalid user oracle from 198.51.100.250 port 51003 ssh2
+Oct 14 11:01:20 web-01 sshd[4004]: Failed password for invalid user postgres from 198.51.100.250 port 51004 ssh2
+Oct 14 11:01:40 web-01 sshd[4005]: Failed password for invalid user git from 198.51.100.250 port 51005 ssh2
+Oct 14 11:02:00 web-01 sshd[4006]: Failed password for invalid user jenkins from 198.51.100.250 port 51006 ssh2
+Oct 14 11:02:20 web-01 sshd[4007]: Failed password for invalid user pi from 198.51.100.250 port 51007 ssh2
+Oct 14 11:02:40 web-01 sshd[4008]: Failed password for invalid user user from 198.51.100.250 port 51008 ssh2
+Oct 14 11:03:00 web-01 sshd[4009]: Failed password for invalid user guest from 198.51.100.250 port 51009 ssh2
+Oct 14 11:03:20 web-01 sshd[4010]: Failed password for invalid user ftp from 198.51.100.250 port 51010 ssh2
+Oct 14 11:04:00 web-01 sshd[2018]: Accepted publickey for adm.rahul from 10.0.1.34 port 40018 ssh2: ED25519 SHA256:abc18
+Oct 14 11:26:00 web-01 sshd[2019]: Accepted publickey for adm.kavya from 10.0.1.34 port 40019 ssh2: ED25519 SHA256:abc19
+Oct 14 11:49:00 web-01 sshd[2020]: Accepted publickey for deploy from 10.0.1.34 port 40020 ssh2: ED25519 SHA256:abc20
+Oct 14 11:54:00 web-01 sshd[2021]: Accepted publickey for adm.rahul from 10.0.1.33 port 40021 ssh2: ED25519 SHA256:abc21
+Oct 14 12:09:00 web-01 sshd[2022]: Accepted publickey for adm.kavya from 10.0.1.33 port 40022 ssh2: ED25519 SHA256:abc22
+Oct 14 12:34:00 web-01 sshd[2023]: Accepted publickey for deploy from 10.0.1.34 port 40023 ssh2: ED25519 SHA256:abc23
+Oct 14 12:48:00 web-01 sshd[2024]: Accepted publickey for deploy from 10.0.1.33 port 40024 ssh2: ED25519 SHA256:abc24
+Oct 14 13:08:00 web-01 sshd[2025]: Accepted publickey for adm.kavya from 10.0.1.34 port 40025 ssh2: ED25519 SHA256:abc25
+Oct 14 13:15:00 web-01 sshd[2026]: Accepted publickey for adm.rahul from 10.0.1.33 port 40026 ssh2: ED25519 SHA256:abc26
+Oct 14 13:33:00 web-01 sshd[2027]: Accepted publickey for deploy from 10.0.1.33 port 40027 ssh2: ED25519 SHA256:abc27
+Oct 14 13:47:00 web-01 sshd[2028]: Accepted publickey for adm.rahul from 10.0.1.34 port 40028 ssh2: ED25519 SHA256:abc28
+Oct 14 13:55:00 web-01 sshd[2029]: Accepted publickey for deploy from 10.0.1.33 port 40029 ssh2: ED25519 SHA256:abc29
+Oct 14 14:12:00 web-01 sshd[2030]: Accepted publickey for adm.kavya from 10.0.1.34 port 40030 ssh2: ED25519 SHA256:abc30
+Oct 14 14:34:00 web-01 sshd[2031]: Accepted publickey for adm.rahul from 10.0.1.33 port 40031 ssh2: ED25519 SHA256:abc31
+Oct 14 14:40:00 web-01 sshd[2032]: Accepted publickey for adm.rahul from 10.0.1.33 port 40032 ssh2: ED25519 SHA256:abc32
+Oct 14 14:47:00 web-01 sshd[2033]: Accepted publickey for deploy from 10.0.1.33 port 40033 ssh2: ED25519 SHA256:abc33
+Oct 14 14:58:00 web-01 sshd[2034]: Accepted publickey for adm.rahul from 10.0.1.34 port 40034 ssh2: ED25519 SHA256:abc34
+Oct 14 15:22:00 web-01 sshd[2035]: Accepted publickey for adm.rahul from 10.0.1.33 port 40035 ssh2: ED25519 SHA256:abc35
+Oct 14 15:28:00 web-01 sshd[2036]: Accepted publickey for adm.rahul from 10.0.1.34 port 40036 ssh2: ED25519 SHA256:abc36
+Oct 14 15:44:00 web-01 sshd[2037]: Accepted publickey for deploy from 10.0.1.34 port 40037 ssh2: ED25519 SHA256:abc37
+Oct 14 16:01:00 web-01 sshd[2038]: Accepted publickey for adm.rahul from 10.0.1.34 port 40038 ssh2: ED25519 SHA256:abc38
+Oct 14 16:26:00 web-01 sshd[2039]: Accepted publickey for adm.kavya from 10.0.1.33 port 40039 ssh2: ED25519 SHA256:abc39

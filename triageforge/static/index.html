@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TriageForge — AI SOC Copilot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" class="logo" aria-hidden="true"><path d="M16 2 4 7v8c0 7.5 5.1 13.4 12 15 6.9-1.6 12-7.5 12-15V7L16 2Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10 16 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <div class="brand-name">TriageForge</div>
+        <div class="brand-sub">AI SOC copilot · detect → correlate → respond → report</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span id="ws-label" class="muted"></span>
+      <span id="ai-badge" class="badge"></span>
+      <button id="btn-demo" class="btn primary">Load demo scenario</button>
+      <label class="btn" for="file-input">Upload logs</label>
+      <input id="file-input" type="file" multiple accept=".log,.txt,.json,.jsonl" hidden>
+    </div>
+  </header>
+
+  <section id="funnel" class="funnel hidden"></section>
+
+  <section id="empty" class="empty">
+    <h1>From 5,000 raw events to the one incident that matters.</h1>
+    <p>TriageForge ingests auth, VPN, EDR, email, proxy, firewall and web telemetry, runs ATT&amp;CK-mapped detections and
+      behavioural ML, correlates alerts into incidents, and drafts the response — including CERT-In, DPDP and
+      cyber-insurance notifications. Log fields that try to manipulate the AI are caught and neutralised.</p>
+    <div class="empty-actions">
+      <button class="btn primary big" onclick="loadDemo()">Load demo scenario</button>
+      <label class="btn big" for="file-input">Upload auth.log / access.log / JSONL</label>
+    </div>
+    <ol class="steps">
+      <li><b>Detect</b> 16 ATT&amp;CK-mapped rules + Isolation Forest UEBA</li>
+      <li><b>Guard</b> prompt-injection firewall for log data</li>
+      <li><b>Correlate</b> entity graph → incidents, explainable risk</li>
+      <li><b>Respond</b> Claude analyst, playbooks, chat</li>
+      <li><b>Report</b> CERT-In 6 h clock, DPDP, insurer notice</li>
+    </ol>
+  </section>
+
+  <main id="app" class="layout hidden">
+    <aside class="queue">
+      <div class="queue-head">
+        <h2>Incident queue</h2>
+        <span id="queue-count" class="muted"></span>
+      </div>
+      <div id="queue-list"></div>
+    </aside>
+    <section id="detail" class="detail"></section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="modal-title"></h3>
+        <div class="modal-actions">
+          <button class="btn small" id="modal-copy">Copy</button>
+          <a class="btn small" id="modal-download" download>Download .md</a>
+          <button class="btn small" onclick="closeModal()">Close</button>
+        </div>
+      </div>
+      <div id="modal-body" class="md"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
