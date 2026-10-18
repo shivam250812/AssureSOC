@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from triageforge.parsers import parse_access_log, parse_any, parse_auth_log
+from assuresoc.parsers import parse_access_log, parse_any, parse_auth_log
 
 
 def test_auth_log_failed_and_accepted():

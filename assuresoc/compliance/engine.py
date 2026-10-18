@@ -15,8 +15,8 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 from typing import Dict, List
 
-from .config import IST, OrgConfig
-from .models import Alert, Incident
+from ..core.config import IST, OrgConfig
+from ..core.models import Alert, Incident
 
 # Subset of CERT-In Directions Annexure I incident types used by our detections.
 CERTIN_TYPES = {
@@ -124,7 +124,7 @@ def certin_report_md(incident: Incident, alerts: List[Alert], org: OrgConfig) ->
     lines = [
         f"# CERT-In Incident Report — DRAFT ({incident.id})",
         "",
-        "> Auto-drafted by TriageForge for analyst review. Verify every field against the current "
+        "> Auto-drafted by AssureSOC for analyst review. Verify every field against the current "
         "CERT-In incident reporting form before submission.",
         "",
         "## 1. Reporting organisation",
@@ -169,7 +169,7 @@ def certin_report_md(incident: Incident, alerts: List[Alert], org: OrgConfig) ->
                                                      if reg.get("personal_data_at_risk") else "Not indicated so far"),
         "",
         "## 10. Logs preserved",
-        "- Source telemetry retained in TriageForge evidence store (event IDs referenced per alert). "
+        "- Source telemetry retained in AssureSOC evidence store (event IDs referenced per alert). "
         "CERT-In Directions require ICT logs to be maintained for 180 days within India.",
     ]
     return "\n".join(lines) + "\n"
@@ -213,7 +213,7 @@ def insurer_notice_md(incident: Incident, alerts: List[Alert], org: OrgConfig) -
     lines += [
         "",
         "## Evidence preserved",
-        f"- {len(alerts)} correlated detections with linked source events (TriageForge {incident.id})",
+        f"- {len(alerts)} correlated detections with linked source events (AssureSOC {incident.id})",
         "- No ransom has been paid or negotiated; insurer consent will be sought before any such step.",
     ]
     return "\n".join(lines) + "\n"

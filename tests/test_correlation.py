@@ -1,6 +1,6 @@
 from datetime import timedelta
 
-from triageforge.compliance import certin_report_md, insurer_notice_md
+from assuresoc.compliance import certin_report_md, insurer_notice_md
 
 
 def _by_rule(ws, rule):

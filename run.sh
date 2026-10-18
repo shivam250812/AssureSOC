@@ -15,5 +15,5 @@ fi
 if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
   echo "ANTHROPIC_API_KEY not set — running with the offline analyst (all detection features work)."
 fi
-echo "TriageForge → http://127.0.0.1:${PORT:-8000}"
-exec .venv/bin/uvicorn triageforge.server:app --host 127.0.0.1 --port "${PORT:-8000}"
+echo "AssureSOC → http://127.0.0.1:${PORT:-8000}"
+exec .venv/bin/uvicorn assuresoc.server:app --host 127.0.0.1 --port "${PORT:-8000}"

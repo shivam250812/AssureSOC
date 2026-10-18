@@ -1,9 +1,9 @@
 from datetime import datetime, timezone
 
-from triageforge.analyst import incident_context
-from triageforge.guard import sanitise_for_llm, scan_text
-from triageforge.models import Event
-from triageforge.scenario import INJECTION_UA
+from assuresoc.analyst import incident_context
+from assuresoc.guard import sanitise_for_llm, scan_text
+from assuresoc.models import Event
+from assuresoc.scenario import INJECTION_UA
 
 BENIGN = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
@@ -48,4 +48,4 @@ def test_llm_context_contains_no_payload(ws):
     context, neutralised = incident_context(inc, ws.alerts_for(inc), ws.events_by_id, ws.org)
     assert neutralised > 0
     assert "Ignore previous instructions" not in context
-    assert "NEUTRALISED by TriageForge guard" in context
+    assert "NEUTRALISED by AssureSOC guard" in context

@@ -1,7 +1,7 @@
 import pytest
 from fastapi.testclient import TestClient
 
-from triageforge import server
+from assuresoc import server
 
 
 @pytest.fixture()
@@ -77,4 +77,4 @@ def test_upload_rejects_garbage(client):
 
 def test_index_served(client):
     res = client.get("/")
-    assert res.status_code == 200 and "TriageForge" in res.text
+    assert res.status_code == 200 and "AssureSOC" in res.text

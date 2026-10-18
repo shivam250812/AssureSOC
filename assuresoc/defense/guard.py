@@ -14,7 +14,7 @@ import re
 from collections import defaultdict
 from typing import Dict, List, Tuple
 
-from .models import Alert, Event
+from ..core.models import Alert, Event
 
 SCANNED_FIELDS = ("user_agent", "url", "subject", "message", "sender", "user", "signature")
 
@@ -28,7 +28,7 @@ _PATTERNS: List[Tuple[str, re.Pattern]] = [
     ("persona-hijack", re.compile(r"\byou\s+are\s+now\b|\bact\s+as\s+(an?\s+)?(ai|assistant|administrator)\b", re.I)),
 ]
 
-NEUTRALISED = "[NEUTRALISED by TriageForge guard: {n} chars of suspected prompt-injection withheld]"
+NEUTRALISED = "[NEUTRALISED by AssureSOC guard: {n} chars of suspected prompt-injection withheld]"
 
 
 def scan_text(text: str | None) -> List[str]:

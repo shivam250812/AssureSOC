@@ -12,8 +12,8 @@ from collections import Counter, defaultdict
 from datetime import timedelta
 from typing import Dict, List
 
-from .config import OrgConfig
-from .models import TACTIC_ORDER, Alert, Incident, RiskFactor
+from ..core.config import OrgConfig
+from ..core.models import TACTIC_ORDER, Alert, Incident, RiskFactor
 
 LINK_WINDOW = timedelta(hours=8)
 HUB_LIMIT = 40  # entities linking more alerts than this are infrastructure, not evidence

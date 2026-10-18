@@ -14,7 +14,7 @@ import uuid
 from datetime import datetime, timezone
 from typing import Iterable, List, Optional
 
-from .models import Event
+from ..core.models import Event
 
 _EVENT_FIELDS = set(Event.model_fields)
 _ALIASES = {

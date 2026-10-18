@@ -1,6 +1,6 @@
 """Exercise the real Anthropic SDK against a local mock of the Messages API.
 
-Verifies the exact request TriageForge sends (model, server-side fallbacks, structured output,
+Verifies the exact request AssureSOC sends (model, server-side fallbacks, structured output,
 untrusted-data framing, prompt caching) and how it handles success, refusal and streaming —
 without network access or API credentials.
 """
@@ -12,7 +12,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import anthropic
 import pytest
 
-from triageforge import analyst
+from assuresoc import analyst
 
 ANALYSIS = {
     "title": "Account takeover leading to ransomware staging on FILESRV-01",
@@ -84,7 +84,7 @@ def mock_api(monkeypatch):
     _Mock.mode = "ok"
     monkeypatch.setattr(analyst, "_client", anthropic.Anthropic(
         api_key="test-key", base_url=f"http://127.0.0.1:{srv.server_address[1]}", max_retries=0))
-    monkeypatch.delenv("TRIAGEFORGE_OFFLINE", raising=False)
+    monkeypatch.delenv("ASSURESOC_OFFLINE", raising=False)
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
     yield _Mock
     srv.shutdown()

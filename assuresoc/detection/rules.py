@@ -13,8 +13,8 @@ from itertools import count
 from typing import Callable, Dict, Iterable, List, Optional
 from urllib.parse import urlparse
 
-from .config import OrgConfig
-from .models import Alert, Event
+from ..core.config import OrgConfig
+from ..core.models import Alert, Event
 
 # technique id -> (tactic, name)
 TECHNIQUES: Dict[str, tuple] = {

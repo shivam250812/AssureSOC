@@ -188,7 +188,7 @@ function renderDetail() {
     </div>
     ${clock}
     <nav class="tabs">${[["overview", "Overview"], ["timeline", "Timeline & evidence"], ["graph", "Entity graph"],
-      ["compliance", "Compliance & reporting"], ["ask", "Ask TriageForge"]].map(([k, l]) =>
+      ["compliance", "Compliance & reporting"], ["ask", "Ask AssureSOC"]].map(([k, l]) =>
       `<button class="tab ${state.tab === k ? "active" : ""}" data-tab="${k}">${l}</button>`).join("")}</nav>
     <div id="tab-body"></div>`;
   $("#status").onchange = async (e) => {
@@ -381,7 +381,7 @@ function renderAsk(body) {
   const msgs = state.chat[id] || (state.chat[id] = []);
   body.innerHTML = `
     <div class="panel chat">
-      <h3>Ask TriageForge about ${esc(id)} <span class="muted" style="text-transform:none;letter-spacing:0">${state.aiEnabled ? "answers grounded in this incident's evidence" : "offline mode — set ANTHROPIC_API_KEY for Claude"}</span></h3>
+      <h3>Ask AssureSOC about ${esc(id)} <span class="muted" style="text-transform:none;letter-spacing:0">${state.aiEnabled ? "answers grounded in this incident's evidence" : "offline mode — set ANTHROPIC_API_KEY for Claude"}</span></h3>
       <div class="msgs" id="msgs">${msgs.map((m) => `<div class="msg ${m.role}">${m.role === "assistant" ? cite(m.content) : esc(m.content)}</div>`).join("")}</div>
       <div class="suggest">${SUGGESTIONS.map((s) => `<button data-q="${esc(s)}">${esc(s)}</button>`).join("")}</div>
       <form class="chat-input" id="chat-form"><input id="chat-q" placeholder="e.g. Is adm.rahul's account still compromised?" autocomplete="off"><button class="btn primary">Ask</button></form>

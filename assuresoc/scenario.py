@@ -11,7 +11,7 @@ which three things happen at once:
 Only documentation IP ranges (RFC 5737) and `.example` domains are used. Endpoint activity is
 represented as EDR alert records (signature + ATT&CK technique), as a SOC would receive it.
 
-    python -m triageforge.scenario --out samples/scenario.jsonl
+    python -m assuresoc.scenario --out samples/scenario.jsonl
 """
 
 from __future__ import annotations
@@ -21,8 +21,8 @@ import random
 from datetime import datetime, timedelta, timezone
 from typing import List, Optional
 
-from .config import IST
-from .models import Event
+from .core.config import IST
+from .core.models import Event
 
 USERS = [
     "priya.sharma", "rohan.verma", "ananya.iyer", "arjun.mehta", "kavya.nair", "vikram.singh",
@@ -231,7 +231,7 @@ def generate(anchor: Optional[datetime] = None, seed: int = 7, days: int = 7) ->
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Generate the TriageForge demo scenario as JSONL")
+    ap = argparse.ArgumentParser(description="Generate the AssureSOC demo scenario as JSONL")
     ap.add_argument("--out", default="samples/scenario.jsonl")
     ap.add_argument("--anchor", help="ISO time the phishing email lands (default: now - 2h40m)")
     ap.add_argument("--seed", type=int, default=7)

@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta, timezone
 
-from triageforge.config import DEFAULT_ORG
-from triageforge.detections import DetectionContext, lookalike_reason, rule_password_spray
-from triageforge.models import Event
+from assuresoc.config import DEFAULT_ORG
+from assuresoc.detections import DetectionContext, lookalike_reason, rule_password_spray
+from assuresoc.models import Event
 
 ORG = ["novapay.example"]
 

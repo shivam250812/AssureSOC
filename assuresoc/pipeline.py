@@ -7,14 +7,14 @@ from collections import Counter
 from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
-from .analyst import offline_analysis
-from .anomaly import detect_anomalies
 from .compliance import assess
-from .config import DEFAULT_ORG, OrgConfig
-from .correlate import build_incidents
-from .detections import DetectionContext, run_rules
-from .guard import detect_injections
-from .models import Alert, Event, Incident
+from .core.config import DEFAULT_ORG, OrgConfig
+from .core.models import Alert, Event, Incident
+from .defense.guard import detect_injections
+from .detection.anomaly import detect_anomalies
+from .detection.correlate import build_incidents
+from .detection.rules import DetectionContext, run_rules
+from .intelligence.analyst import offline_analysis
 
 
 class Workspace:

@@ -13,9 +13,9 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 
-from .config import IST, OrgConfig
-from .detections import DetectionContext
-from .models import Alert, Event
+from ..core.config import IST, OrgConfig
+from .rules import DetectionContext
+from ..core.models import Alert, Event
 
 FEATURES = [
     "logins_ok",

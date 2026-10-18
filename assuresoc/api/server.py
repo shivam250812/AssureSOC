@@ -1,6 +1,6 @@
 """FastAPI app: REST API + the single-page analyst console.
 
-    uvicorn triageforge.server:app --port 8000
+    uvicorn assuresoc.server:app --port 8000
 """
 
 from __future__ import annotations
@@ -16,17 +16,18 @@ from fastapi.responses import FileResponse, PlainTextResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from . import analyst, compliance
-from .guard import scan_event
-from .models import Incident
-from .parsers import parse_any
-from .pipeline import Workspace, analyse
-from .scenario import generate
+from .. import compliance
+from ..core.models import Incident
+from ..defense.guard import scan_event
+from ..ingestion.parsers import parse_any
+from ..intelligence import analyst
+from ..pipeline import Workspace, analyse
+from ..scenario import generate
 
 STATIC = Path(__file__).parent / "static"
 MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 
-app = FastAPI(title="TriageForge", version="0.1.0",
+app = FastAPI(title="AssureSOC", version="0.1.0",
               description="AI SOC copilot: telemetry -> prioritised incidents -> response & compliance")
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
